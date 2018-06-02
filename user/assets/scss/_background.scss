@@ -1,0 +1,12 @@
+/* Backgrounds  */
+@each $color, $value in $theme-gradient-colors {
+	.bg-gradient-#{$color} {
+		background: theme-gradient-color($color);
+	}
+}
+
+.sidebar-grdient-dark{
+  background: $black;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#FFF', GradientType=0 );
+  color: $white;
+}

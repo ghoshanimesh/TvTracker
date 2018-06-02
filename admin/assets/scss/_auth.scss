@@ -1,0 +1,80 @@
+/* Auth */
+@import url('https://fonts.googleapis.com/css?family=Mina');
+$mina: 'Mina', sans-serif; 
+
+.auth-pages {
+	background: linear-gradient(#11998e, #38ef7d) no-repeat center center;
+    background: -webkit-gradient(linear, #11998e, #38ef7d) no-repeat center center;
+    background: -webkit-linear-gradient(#11998e, #38ef7d) no-repeat center center;
+    background: -moz-linear-gradient(#11998e, #38ef7d) no-repeat center center;
+    background: -ms-linear-gradient(#11998e, #38ef7d) no-repeat center center;
+    background: -o-linear-gradient(#11998e, #38ef7d) no-repeat center center;
+	background-size: cover;
+
+	.forgot-pass {
+		font-size: $default-font-size;
+		text-align: right;
+	}
+    
+    h3{
+        font-family: $mina;
+    }
+    
+    input{
+        font-size: 1rem;
+    }
+    
+	button {
+		font-size: $default-font-size;
+		&.enter-btn {
+			height: 45px;
+			margin-bottom: 28px;
+		}
+	}
+
+	.sign-up {
+		font-size: $default-font-size;
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 0;
+
+		a {
+			color: theme-color(primary);
+		}
+	}
+
+	.terms {
+		font-size: $default-font-size;
+		text-align: center;
+		margin-top: 23px;
+		margin-bottom: 0;
+
+		a {
+			color: inherit;
+			text-decoration: underline;
+		}
+	}
+
+	&.login-2,
+	&.option-2 {
+		padding: 0;
+		height: 100%;
+		min-height: 100vh;
+		width: 100%;
+
+		.card {
+			min-height: 100vh;
+		}
+
+		&.option-2 {
+			background-image: url("../images/samples/Login_bg2.jpg");
+			background-size: cover;
+		}
+
+		&.login-2 {
+			background-image: url("../images/samples/Login_bg.jpg");
+			background-size: cover;
+			background-position: right bottom;
+		}
+	}
+}
